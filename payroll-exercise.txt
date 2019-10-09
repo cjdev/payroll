@@ -1,0 +1,13 @@
+digraph detangled {
+  "PayrollService";
+  "CalendarDay";
+  "PayrollDatabase";
+  "PayCommand";
+  "Employee";
+  "PayrollService" -> "CalendarDay";
+  "PayrollService" -> "PayrollDatabase";
+  "PayrollService" -> "PayCommand";
+  "PayrollDatabase" -> "CalendarDay";
+  "PayrollDatabase" -> "Employee";
+  "PayCommand" -> "Employee";
+}
